@@ -10,7 +10,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./Android/src
     steps:
     - uses: actions/checkout@v4
     - name: set up JDK 11
@@ -19,8 +21,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-    - name: to AndroidCD
-      run: cd ./Android/src
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
