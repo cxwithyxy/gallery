@@ -39,7 +39,7 @@ data class AllowedModel(
 ) {
   fun toModel(): Model {
     // Construct HF download url.
-    val downloadUrl = "https://huggingface.co/$modelId/resolve/main/$modelFile?download=true"
+    val downloadUrl = "https://hf-mirror.com/$modelId/resolve/main/$modelFile?download=true"
 
     // Config.
     val isLlmModel =
@@ -101,7 +101,7 @@ data class AllowedModel(
       downloadFileName = modelFile,
       showBenchmarkButton = showBenchmarkButton,
       showRunAgainButton = showRunAgainButton,
-      learnMoreUrl = "https://huggingface.co/${modelId}",
+      learnMoreUrl = "https://hf-mirror.com/${modelId}",
       llmSupportImage = llmSupportImage == true,
     )
   }

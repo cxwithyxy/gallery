@@ -56,6 +56,6 @@ Licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file 
 ## 🔗 Useful Links
 
 *   [**Project Wiki (Detailed Guides)**](https://github.com/google-ai-edge/gallery/wiki)
-*   [Hugging Face LiteRT Community](https://huggingface.co/litert-community)
+*   [Hugging Face LiteRT Community](https://hf-mirror.com/litert-community)
 *   [LLM Inference guide for Android](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference/android)
 *   [Google AI Edge Documentation](https://ai.google.dev/edge)

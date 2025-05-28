@@ -207,7 +207,7 @@ fun DownloadAndTryButton(
       scope.launch(Dispatchers.IO) {
         if (needToDownloadFirst) {
           // For HuggingFace urls
-          if (model.url.startsWith("https://huggingface.co")) {
+          if (model.url.startsWith("https://hf-mirror.com")) {
             checkingToken = true
 
             // Check if the url needs auth.

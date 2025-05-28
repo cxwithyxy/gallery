@@ -30,8 +30,8 @@ object AuthConfig {
   const val redirectUri = "com.google.ai.edge.gallery.oauth://oauthredirect"
 
   // OAuth 2.0 Endpoints (Authorization + Token Exchange)
-  private const val authEndpoint = "https://huggingface.co/oauth/authorize"
-  private const val tokenEndpoint = "https://huggingface.co/oauth/token"
+  private const val authEndpoint = "https://hf-mirror.com/oauth/authorize"
+  private const val tokenEndpoint = "https://hf-mirror.com/oauth/token"
 
   // OAuth service configuration (AppAuth library requires this)
   val authServiceConfig = AuthorizationServiceConfiguration(

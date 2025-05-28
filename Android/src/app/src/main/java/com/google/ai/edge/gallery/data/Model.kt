@@ -320,7 +320,7 @@ val MODEL_IMAGE_GENERATION_STABLE_DIFFUSION: Model = Model(
   showBenchmarkButton = false,
   info = IMAGE_GENERATION_INFO,
   configs = IMAGE_GENERATION_CONFIGS,
-  learnMoreUrl = "https://huggingface.co/litert-community",
+  learnMoreUrl = "https://hf-mirror.com/litert-community",
 )
 
 val EMPTY_MODEL: Model = Model(
