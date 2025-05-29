@@ -1,6 +1,54 @@
 {
   "models": [
     {
+      "name": "Qwen2.5-1.5B-Instruct q8",
+      "modelId": "litert-community/Qwen2.5-1.5B-Instruct",
+      "modelFile": "Qwen2.5-1.5B-Instruct_multi-prefill-seq_q8_ekv1280.task",
+      "description": "A variant of [Qwen/Qwen2.5-1.5B-Instruct](https://hf-mirror.com/Qwen/Qwen2.5-1.5B-Instruct) with 8-bit quantization ready for deployment on Android using the [MediaPipe LLM Inference API](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference)",
+      "sizeInBytes": 1625493432,
+      "version": "20250514",
+      "defaultConfig": {
+        "topK": 40,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 1024,
+        "accelerators": "cpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab"]
+    },
+    {
+      "name": "DeepSeek-R1-Distill-Qwen-1.5B q8",
+      "modelId": "litert-community/DeepSeek-R1-Distill-Qwen-1.5B",
+      "modelFile": "DeepSeek-R1-Distill-Qwen-1.5B_multi-prefill-seq_q8_ekv1280.task",
+      "description": "DeepSeek-R1-Distill-Qwen-1.5B q8",
+      "sizeInBytes": 1861094737,
+      "version": "20250514",
+      "defaultConfig": {
+        "topK": 40,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 10240,
+        "accelerators": "cpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab"]
+    },
+    {
+      "name": "Gemma3-4B-IT",
+      "modelId": "litert-community/Gemma3-4B-IT",
+      "modelFile": "gemma3-4b-it-int4-web.task",
+      "description": "Gemma3-4B-IT",
+      "sizeInBytes": 2559442944,
+      "version": "20250514",
+      "defaultConfig": {
+        "topK": 40,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 10240,
+        "accelerators": "cpu,gpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab", "llm_ask_image"]
+    },
+    {
       "name": "Gemma-3n-E2B-it-int4",
       "modelId": "google/gemma-3n-E2B-it-litert-preview",
       "modelFile": "gemma-3n-E2B-it-int4.task",
@@ -47,38 +95,6 @@
         "temperature": 1.0,
         "maxTokens": 1024,
         "accelerators": "gpu,cpu"
-      },
-      "taskTypes": ["llm_chat", "llm_prompt_lab"]
-    },
-    {
-      "name": "Qwen2.5-1.5B-Instruct q8",
-      "modelId": "litert-community/Qwen2.5-1.5B-Instruct",
-      "modelFile": "Qwen2.5-1.5B-Instruct_multi-prefill-seq_q8_ekv1280.task",
-      "description": "A variant of [Qwen/Qwen2.5-1.5B-Instruct](https://hf-mirror.com/Qwen/Qwen2.5-1.5B-Instruct) with 8-bit quantization ready for deployment on Android using the [MediaPipe LLM Inference API](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference)",
-      "sizeInBytes": 1625493432,
-      "version": "20250514",
-      "defaultConfig": {
-        "topK": 40,
-        "topP": 0.95,
-        "temperature": 1.0,
-        "maxTokens": 1024,
-        "accelerators": "cpu"
-      },
-      "taskTypes": ["llm_chat", "llm_prompt_lab"]
-    },
-    {
-      "name": "DeepSeek-R1-Distill-Qwen-1.5B q8",
-      "modelId": "litert-community/DeepSeek-R1-Distill-Qwen-1.5B",
-      "modelFile": "DeepSeek-R1-Distill-Qwen-1.5B_multi-prefill-seq_q8_ekv1280.task",
-      "description": "DeepSeek-R1-Distill-Qwen-1.5B q8",
-      "sizeInBytes": 1861094737,
-      "version": "20250514",
-      "defaultConfig": {
-        "topK": 40,
-        "topP": 0.95,
-        "temperature": 1.0,
-        "maxTokens": 10240,
-        "accelerators": "cpu"
       },
       "taskTypes": ["llm_chat", "llm_prompt_lab"]
     }
