@@ -77,8 +77,8 @@
         "topK": 40,
         "topP": 0.95,
         "temperature": 1.0,
-        "maxTokens": 1024,
-        "accelerators": "cpu,gpu"
+        "maxTokens": 10240,
+        "accelerators": "cpu"
       },
       "taskTypes": ["llm_chat", "llm_prompt_lab"]
     }
